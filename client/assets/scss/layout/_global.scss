@@ -1,0 +1,38 @@
+/* ### global ###"*/
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: $open-sans;
+   font-weight: 400;
+   color: $font-grey;
+}
+
+h1, h2, h3, th {
+   font-weight: inherit;
+}
+
+h1, h2, h3 {
+   font-size: 2rem;
+}
+
+a {
+   text-decoration: none;
+}
+
+figure {
+   margin: 0;
+}
+
+button {
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+button, a{
+   color: inherit;
+}
+

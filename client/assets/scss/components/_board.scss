@@ -1,0 +1,23 @@
+
+.board {
+   border-collapse: collapse;
+   margin: 0 2rem;
+
+   td, th{
+      height: 40px;
+      width: 40px;
+   }
+   td {
+      border: 1px solid $cell-light-grey;
+   }
+
+   &.red {
+      td {
+         border-color: $cell-grey;
+         &:hover {
+            background-color: $light-yellow;
+            cursor: pointer;
+         }
+      }
+   }
+}
