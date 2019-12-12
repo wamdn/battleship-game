@@ -4,11 +4,36 @@
    margin: 0 2rem;
 
    td, th{
-      height: 40px;
-      width: 40px;
+      height: $cell-size;
+      width: $cell-size;
    }
    td {
       border: 1px solid $cell-light-grey;
+   }
+
+   &.blue {
+      td.busy {
+         position: relative;
+         div[data-id] {
+            background-color: lightskyblue;
+            border: 1px solid $blue;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            height: $cell-size;
+         }
+         div[data-length="3"] {
+            width: $cell-size * 3;
+         }
+         div[data-length="2"] {
+            width: $cell-size * 2;
+         }
+         div[data-length="1"] {
+            width: $cell-size * 1;
+         }
+      }
    }
 
    &.red {

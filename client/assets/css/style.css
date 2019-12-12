@@ -391,6 +391,31 @@ template {
   border: 1px solid #DBDBDB;
 }
 
+.board.blue td.busy {
+  position: relative;
+}
+
+.board.blue td.busy div[data-id] {
+  background-color: lightskyblue;
+  border: 1px solid #1591E5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+}
+
+.board.blue td.busy div[data-length="3"] {
+  width: 120px;
+}
+
+.board.blue td.busy div[data-length="2"] {
+  width: 80px;
+}
+
+.board.blue td.busy div[data-length="1"] {
+  width: 40px;
+}
+
 .board.red td {
   border-color: #B7B7B7;
 }
