@@ -1,7 +1,7 @@
 
 .board {
    border-collapse: collapse;
-   margin: 0 2rem;
+   margin-left: 10px;
 
    td, th{
       height: $cell-size;
@@ -9,6 +9,7 @@
    }
    td {
       border: 1px solid $cell-light-grey;
+      padding: 0;
    }
 
    &.blue {

@@ -365,21 +365,13 @@ template {
 }
 
 #app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 1000px;
   height: 100vh;
 }
 
 .board {
   border-collapse: collapse;
-  margin: 0 2rem;
+  margin-left: 10px;
 }
 
 .board td, .board th {
@@ -389,6 +381,7 @@ template {
 
 .board td {
   border: 1px solid #DBDBDB;
+  padding: 0;
 }
 
 .board.blue td.busy {
@@ -423,6 +416,44 @@ template {
 .board.red td:hover {
   background-color: #EFEFDF;
   cursor: pointer;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+}
+
+.draggable {
+  height: 40px;
+  background-color: rgba(21, 145, 229, 0.5);
+  border: 1px solid #1591E5;
+}
+
+.draggable p {
+  text-align: center;
+  padding: -20px 0 0 0;
+  font-weight: 900;
+}
+
+.draggable.ui-draggable-dragging {
+  background-color: rgba(5, 207, 5, 0.2);
+  border: 1px solid #05cf05;
+}
+
+.draggable[data-lenght="1"] {
+  width: 40px;
+}
+
+.draggable[data-lenght="2"] {
+  width: 81px;
+}
+
+.draggable[data-lenght="3"] {
+  width: 122px;
+}
+
+.draggable[data-lenght="4"] {
+  width: 163px;
 }
 
 /* ### global ###"*/
@@ -461,5 +492,9 @@ button {
 
 button, a {
   color: inherit;
+}
+
+#shipBoard {
+  margin: 1px;
 }
 /*# sourceMappingURL=style.css.map */

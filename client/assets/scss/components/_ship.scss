@@ -1,0 +1,39 @@
+.square {
+   height: 40px;
+   width: 40px;
+}
+
+.draggable {
+   height: 40px;
+   background-color: transparentize($blue, 0.5);
+   border: 1px solid $blue;
+
+   p {
+      text-align: center;
+      padding: -20px 0 0 0;
+      font-weight: 900;
+   }
+
+   &.ui-draggable-dragging {
+      background-color: transparentize(rgb(5, 207, 5), 0.8);
+      border: 1px solid rgb(5, 207, 5);
+   }
+
+   // size
+
+   &[data-lenght="1"] {
+      width: 40px;
+   }
+
+   &[data-lenght="2"] {
+      width: 81px;
+   }
+
+   &[data-lenght="3"] {
+      width: 122px;
+   }
+
+   &[data-lenght="4"] {
+      width: 163px;
+   }
+}
